@@ -1,0 +1,79 @@
+/*
+LloydyWeb Dark Theme
+Author:   Paul Lloyd
+*/
+html {
+	border-top:10px solid #222;
+}
+body {
+	border-top:1px solid #060606;
+	background:#111 url(/_css/_gfx/body-dark.gif) no-repeat right top;
+	color:#999;
+}
+h3,
+#content div.bookmarks h3,
+#trackback h3,
+#comments h3,
+#add-comment h4 {
+	color:#eee;
+}
+h4 {
+	color:#ccc;
+}
+hr {
+	background-color:#333;
+}
+img.photo {
+	border-color:#fff;
+}
+#branding p#logo a {
+	background:url(/_css/_gfx/logo-dark.gif) no-repeat 0 0;
+}
+#content a,
+#siteinfo a {
+	color:#eee;
+}
+html>body #content a,
+html>body #siteinfo a,
+#content div.hentry ul.entry-info li a {
+	border-bottom-color:#444;
+}
+#content ul.navigation li {
+	border-color:#333;
+	background:url(/_css/_gfx/bullet-arrow-right-dark.gif) no-repeat 0 7px;
+	}
+	#content ul.navigation li.prev {
+		background-image:url(/_css/_gfx/bullet-arrow-left-dark.gif);
+	}
+#content div.module p.more {
+	border-top-color:#333;
+}
+#navigation {}
+	#navigation ul li a {
+		color:#bbb;
+	}
+	#navigation ul li.active a {
+		background:url(/_css/_gfx/tile-dark.gif);
+		color:#eee;
+	}
+	#navigation ul li a:hover {
+		background-color:#222;
+	}
+	#navigation form input#search-input {
+		border:1px solid #333;
+		background-color:#111;
+		color:#bbb;
+	}
+#siteinfo {
+	border-top-color:#090909;
+	background:url(_gfx/siteinfo-dark.png) repeat-x;
+	}
+	#siteinfo h4 {
+		color:#fff;
+	}
+	#siteinfo-related li.multipack a {
+		background:url(_gfx/multipack-dark.gif) no-repeat 0 0;
+	}
+	#siteinfo-related li.fourtwo a {
+		background:url(_gfx/fourtwo-dark.gif) no-repeat 0 0;
+	}

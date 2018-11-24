@@ -1,0 +1,229 @@
+/*
+LloydyWeb Layout Styles
+Author:   Paul Lloyd
+*/
+
+body, input, textarea {
+	font:11px "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+}
+strong, dt, legend {
+	font-weight:bold;
+}
+em {
+	font-style:italic;
+}
+abbr {
+	cursor:help;
+	border-color:#999;
+	}
+	a abbr {
+		border:0 none;
+	}
+h1 {
+	clear:left;
+	margin:0.3em 0 0.7em -0.5em;
+	padding-left:0.5em;
+	font:lighter italic 200%/1.3em "Times New Roman", Times, serif;
+}
+h1 a {
+	color:#000!important;
+}
+h2 {
+	margin-bottom:0.7em;
+	font:lighter 175%/1.3em "Times New Roman", Times, serif;
+}
+h3 {
+	margin:1em 0 0.2em 0;
+	font:lighter 150%/1.4em "Times New Roman", Times, serif;
+	color:#333;
+}
+h4,
+p.intro,
+#content div.bookmarks h3,
+#trackback h3,
+#comments h3,
+#add-comment h4 {
+	margin:1.2em 0 0.2em 0;
+	font:bold 110%/1.4em "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+	color:#333;
+}
+h5 {
+	margin-bottom:0.3em;
+	color:#333;
+}
+hr {
+	height:1px;
+	margin:2em 0;
+	background-color:#ddd;
+}
+p, ul, ol, dl, fieldset, caption, embed {
+	margin-bottom:0.7em;
+	line-height:1.6em;
+}
+ul li {
+	list-style:square;
+	}
+	li, dt, dd, address {
+		line-height:1.5em;
+	}
+	li li {
+		margin-top:0.7em; margin-left:2em;
+	}
+blockquote {
+	margin:2em 0;
+	padding:0 2.75em;
+	background:url(/_css/_gfx/blockquote.gif) no-repeat 0 0;
+	}
+	blockquote p {
+		margin-bottom:0.5em;
+		font:125%/1.6em Georgia, "Times New Roman", Times, serif;
+		}
+		blockquote p cite {
+			font:80% "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+			color:#888;
+		}
+a img {
+	border:0 none;
+}
+table {
+	margin-bottom:0.7em;
+	border-collapse:collapse;
+	}
+	table td,
+	table th {
+		padding:5px;
+		border:1px solid #ccc;
+	}
+	table thead th {
+		background-color:#ddd;
+		font-weight:bold;
+	}
+	table tbody th {
+		background-color:#eee;
+		font-weight:bold;
+	}
+#content input.text,
+#content textarea {
+	border:1px solid #ccc; border-top-color:#666!important;
+	background:#fff url(/_css/_gfx/input.gif) repeat-x left top;
+}
+input.text:focus,
+textarea:focus {
+	background-color:#ffd!important;
+}
+
+
+/*----------------------------------------------------------------------
+	basic classes
+----------------------------------------------------------------------*/
+.hide {
+	display:none;
+}
+.clear {
+	clear:left;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+img.left {
+	margin-right:10px;
+}
+img.right {
+	margin-left:10px;
+}
+img.photo {
+	display:block;
+	border:5px solid #eee;
+}
+p.frames img.left {
+	margin-right:-5px;
+}
+/* =paragraph styles */
+p.intro {
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#666;
+}
+p.caption {
+	margin-bottom:0.7em;
+}
+caption,
+.caption,
+p.footnote {
+	color:#999;
+	font-size:95%; line-height:1.3em;
+}
+div.summary p {
+	font-size:115%; line-height:1.5em;
+	}
+	.summary p.caption {
+		font-size:90%;
+	}
+/* =highlighting */
+.highlight,
+tr.highlight td,
+tr.highlight th {
+	background-color: #ffc;
+}
+tbody tr.highlight th {
+	background-color:#ff9;
+}
+tbody tr.highlight td {
+	background-color: #ffc;
+}
+/* =new */
+strong.new {
+	padding:0.1em 0.3em;
+	border:1px solid #c90;
+	background-color:#ff9;
+	line-height:1.2em;
+	color:#666;
+}
+/* =detail/fixture lists */
+dl.details,
+dl.fixtures {
+	margin-bottom:2em;
+}
+dl.fixtures {
+	width:420px;
+	}
+	dl.details dt,
+	dl.fixtures dt {
+		float:left; clear:left;
+		width:90px;
+	}
+	dl.fixtures dt {
+		width:240px;
+	}
+	dl.details dd,
+	dl.fixtures dd {
+		clear:right;
+		margin-left:0!important;
+		padding:0 0 0.2em 100px;
+		border-bottom:1px solid #eee;
+	}
+	dl.fixtures dd {
+		color:#888;
+	}
+/* =xfn friend listings */
+ul.xfn {
+	float:left;
+	margin:0 0 2em 0;
+}
+ul.xfn li.vcard {
+	float:left;
+	width:100px;
+	margin:0 0 1.3em 0;
+	list-style:none;
+}
+ul.xfn li.vcard img {
+	display:block;
+	margin-bottom:0.2em;
+}
+/* =tags */
+ul.tags li {
+	list-style:none;
+}

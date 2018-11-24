@@ -1,0 +1,46 @@
+/*
+LloydyWeb Print Master
+Author:   Paul Lloyd
+*/
+
+/*----------------------------------------------------------------------
+	YUI Library CSS
+----------------------------------------------------------------------*/
+@import url(yui/fonts.css);
+
+/*----------------------------------------------------------------------
+	Imports
+----------------------------------------------------------------------*/
+@import url(basic.css);
+
+/*----------------------------------------------------------------------
+	Print Specific Values
+----------------------------------------------------------------------*/
+a {
+	text-decoration:none;
+	color:#000;
+}
+#content-primary #add-comment,
+#content-tertiary,
+#navigation,
+.more, .rss, .entry-more,
+.aim, .yim, .msn, .skype, .linkedin, .claimid, .technorati,
+.download, .purchase,
+#siteinfo p,
+#siteinfo p a,
+#siteinfo h4,
+#siteinfo ul {
+	display:none;
+}
+#siteinfo p.copyright {
+	padding-top:0.5em;
+	border-top:1px solid #000;
+	display:block;
+}
+h2,
+h3 {
+	margin-top:2em;
+}
+.module {
+	margin-top:3em;
+}

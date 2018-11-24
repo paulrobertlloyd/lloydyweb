@@ -1,0 +1,68 @@
+/*
+LloydyWeb Photo Styles
+Author:   Paul Lloyd
+*/
+ul.pagelist {
+	float:left; clear:left;
+	margin-top:1em;
+}
+ul.pagelist li {
+	float:left; display:block;
+	margin:0 2px;
+	list-style:none;
+	color:#333;
+}
+ul.pagelist li a {
+	display:block;
+	padding:0.2em 0.5em!important;
+	border:1px solid #333!important;
+	font-weight:bold;
+}
+ul.pagelist li.prev {
+	margin-right:0.5em;
+}
+ul.pagelist li.next {
+	margin-left:0.5em;
+}
+ul.pagelist li.prev a,
+ul.pagelist li.next a {
+	padding:0.2em 0!important;
+	border:0 none!important;
+}
+ul.pagelist li.current a {
+	border-color:#eee;
+	background-color:#eee;
+	color:#111!important;
+}
+
+p.photo img {
+	display:block;
+	border:5px solid #fff;
+}
+.photo a {
+	border:0 none!important;
+}
+
+div.album {
+	float:left; clear:both;
+}
+div.albumthumb {
+	float:left;
+	width:115px; height:115px;
+	margin-right:15px;
+	background:url(/_css/_gfx/album.gif) no-repeat;
+}
+div.albumthumb a {
+	border:0 none!important;
+}
+div.albumthumb a img {
+	display:block;
+	margin:15px;
+}
+div.albuminfo {
+	float:right;
+	width:370px;
+}
+div.albuminfo h3 {
+	margin:0;
+}

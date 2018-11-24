@@ -1,0 +1,594 @@
+/*
+LloydyWeb Layout Styles
+Author:   Paul Lloyd
+*/
+
+html {
+	border-top:10px solid #eee;
+}
+body {
+	border-top:1px solid #e3e3e3;
+	color:#333;
+	background:url(/_css/_gfx/body.gif) no-repeat right top;
+}
+
+
+/*----------------------------------------------------------------------
+	icons
+----------------------------------------------------------------------*/
+.rss { padding-left:15px; background:url(/_css/_gfx/rss.gif) no-repeat 0 7px; }
+.linkedin { padding-left:20px; background:url(/_css/_gfx/linkedin.gif) no-repeat 0 0; }
+.claimid { padding-left:20px; background:url(/_css/_gfx/claimid.gif) no-repeat 0 0; }
+.technorati { padding-left:18px; background:url(/_css/_gfx/technorati.gif) no-repeat 0 2px; }
+/* .aim { padding-left:18px; background:url(http://big.oscar.aol.com/paul.lloyd@mac.com?on_url=http://lloydyweb.com/_css/_gfx/aim-on.gif&off_url=http://lloydyweb.com/_css/_gfx/aim-off.gif) no-repeat 0 0; } */
+/* .yim { padding-left:16px; background:url(http://opi.yahoo.com/online?u=paul.lloyd&m=g&t=0) no-repeat 0 2px; } */
+.msn { padding-left:20px; background:url(_gfx/msn.gif) no-repeat 0 0; }
+/* .skype { padding-left:20px; background:url(http://mystatus.skype.com/smallicon/fourtwo.net) no-repeat 0 0; } */
+.digg { padding-left:20px; background:url(/_css/_gfx/digg.gif) no-repeat 0 3px; line-height:2em; list-style:none!important; }
+.delicious { padding-left:20px; background:url(/_css/_gfx/delicious.gif) no-repeat 1px 4px; line-height:2em; list-style:none!important; }
+
+
+/*----------------------------------------------------------------------
+	page structure
+----------------------------------------------------------------------*/
+#container {
+	position:relative;
+	width:855px;
+	margin:2em auto 0 auto;
+}
+
+
+/*----------------------------------------------------------------------
+	masthead
+----------------------------------------------------------------------*/
+#branding {
+	height:8em;
+	}
+	#branding p#logo a {
+		display:block;
+		width:155px; height:35px;
+		background:url(/_css/_gfx/logo.gif) no-repeat 0 0;
+		text-indent:-9999px;
+		font-size:0; line-height:0; text-decoration:none;
+		overflow:hidden;
+	}
+	#branding p.tagline,
+	#branding p.section {
+		margin:-1em 0 0 100px;
+		text-transform:uppercase; letter-spacing:0.3em;
+		color:#888;
+	}
+
+
+/*----------------------------------------------------------------------
+	content
+----------------------------------------------------------------------*/
+#content {
+	}
+/* =links */
+	#content a,
+	#siteinfo a {
+		margin-bottom:1px;
+		padding:1px 0;
+		border-bottom:0 none;
+		text-decoration:none;
+		color:#666;
+	}
+	#content ul.tags a[rel="tag"] {
+		padding-left:14px;
+		background:url(/_css/_gfx/tag.gif) no-repeat 0 4px;
+	}
+	#content a[rel^="external"] {
+		padding-right:10px!important;
+		background:url(/_css/_gfx/a-external.gif) no-repeat right 4px;
+	}
+	html>body #content a,
+	html>body #siteinfo a {
+		margin-bottom:0;
+		border-bottom:1px dotted #ccc;
+	}
+	#content a:hover,
+	#siteinfo a:hover {
+		border-bottom:1px solid #dda!important;
+		background-color:#ffd!important;
+		color:#333!important;
+	}
+/* =(sub) navigation */
+	#content ul.navigation li {
+		padding:0.3em 0 0.3em 10px;
+		border-bottom:1px solid #eee;
+		background:url(/_css/_gfx/bullet-arrow-right.gif) no-repeat 0 7px;
+		list-style:none;
+		color:#ccc;
+	}
+	#content ul.navigation li a {
+		border:0 none;
+		background:transparent;
+	}
+/* =(category) navigation */
+	#content div.categories ul.navigation {
+		float:left;
+		margin:0;
+	}
+	#content div.categories ul.navigation li {
+		float:left;
+		width:135px;
+		margin:0;
+	}
+	#content div.categories ul.navigation li a {
+		background:none;
+	}
+/* =(prev/next) navigation */
+	#content ul.navigation li.prev {
+		background-image:url(/_css/_gfx/bullet-arrow-left.gif);
+	}
+	#content ul.navigation li.next {
+		padding-right:10px;
+		background-position:right;
+		text-align:right;
+	}
+
+
+/*----------------------------------------------------------------------
+	content -> content-primary
+----------------------------------------------------------------------*/
+#content-primary {
+	float:left;
+	width:500px;
+	padding-bottom:5em;
+	}
+	#content-primary h1.error span {
+		padding-left:30px;
+		background:#c30 url(_gfx/error.gif) no-repeat 5px 50%;
+		color:#fff;
+	}
+	#content-primary li {
+		margin-bottom:0.5em;
+	}
+	#content-primary dd {
+		margin-left:2.75em; margin-bottom:0.5em;
+	}
+	#content-primary div.categories {
+		float:left; clear:both;
+		margin-bottom:20px;
+		width:100%;
+	}
+	#trackback,
+	#comments,
+	#add-comment {
+		clear:both;
+		margin-top:1em;
+		padding-top:0.5em;
+		border-top:1px solid #ccc;
+	}
+	#add-comment {
+		float:left;
+		}
+		#trackback h3,
+		#comments h3,
+		#add-comment h4 {
+			float:left; clear:left;
+			width:90px;
+			margin:0 0 2.5em 0;
+		}
+		#add-comment h4 {
+			margin:0;
+		}
+		#trackback p,
+		#trackback dl.trackback,
+		#comments p,
+		#comments dl.comment,
+		#add-comment p {
+			position:relative;
+			float:right;
+			width:400px;
+		}
+		#add-comment p.typekey {
+			width:380px;
+			padding-left:20px;
+			background:url(/_css/_gfx/typekey.gif) no-repeat 0 3px;
+			line-height:1.8em;
+		}
+		#comments dl.trackback,
+		#comments dl.comment {
+			margin:1em 0 2em 0;
+		}
+		#comments dl.comment blockquote {
+			margin:0;
+		}
+		#comments dl.trackback dt,
+		#comments dl.comment dt {
+			margin-bottom:0.5em;
+		}
+		#comments dl.response {
+			width:390px;
+			padding:5px 5px 0 5px;
+			background:url(/_css/_gfx/tile.gif);
+			}
+			#comments dl.response p {
+				width:390px;
+			}
+			#comments dl.response ul,
+			#comments dl.response ol,
+			#comments dl.response dl {
+				margin-left:18px;
+			}
+			#comments dl.comment * {
+				padding-right:0;
+			}
+			#comments dl.comment img.photo {
+				position:absolute; top:0; left:-68px;
+			}
+		#add-comment fieldset {
+			float:left; clear:left;
+			width:500px;
+			margin-top:1em;
+		}
+		#add-comment fieldset#comments-preview p,
+		#add-comment fieldset#comments-preview dl,
+		#add-comment fieldset#comments-preview ul,
+		#add-comment fieldset#comments-preview ol {
+			width:400px;
+			margin-left:100px;
+			}
+			#add-comment fieldset legend {
+				text-indent:-9999px;
+				font-size:0; line-height:0; text-decoration:none;
+			}
+			#add-comment fieldset label {
+				display:block;
+				float:left;
+				width:90px;
+				margin-right:10px;
+				text-align:right;
+			}
+			#add-comment fieldset p {
+				float:none;
+				width:500px;
+				margin-bottom:0.5em;
+				}
+				#add-comment fieldset p em.required {
+					font-style:normal;
+					color:#c30;
+				}
+				#add-comment fieldset p.comment-author input.text,
+				#add-comment fieldset p.comment-email input.text {
+					width:325px;
+					padding:2px;
+					margin-right:5px;
+				}
+				#add-comment fieldset p.comment-url input.text {
+					padding:2px;
+					width:380px;
+				}
+				#add-comment fieldset textarea {
+					width:383px;
+					font-size:100%;
+				}
+				#add-comment fieldset p.comment-bake-cookie {
+					padding:0;
+				}
+				#add-comment fieldset p.comment-bake-cookie label {
+					width:200px;
+					padding-left:100px;
+					text-align:left;
+				}
+				#add-comment fieldset#comments-text p em,
+				#add-comment fieldset#comments-text table {
+					display:block;
+					margin-left:100px;
+					line-height:1.5em;
+				}
+				#add-comment p#comments-post {
+					text-align:right;
+					margin-bottom:2em;
+				}
+
+
+/*----------------------------------------------------------------------
+	content -> content-secondary
+----------------------------------------------------------------------*/
+#content-secondary {
+	float:right; clear:right;
+	width:255px;
+}
+
+
+/*----------------------------------------------------------------------
+	content -> content-tertiary
+----------------------------------------------------------------------*/
+#content-tertiary {
+	clear:both;
+	width:855px;
+	padding-top:1em;
+	border-top:1px solid #ccc;
+}
+
+
+/*----------------------------------------------------------------------
+	navigation
+----------------------------------------------------------------------*/
+#navigation {
+	position:absolute; top:0; left:275px;
+	width:600px;
+	}
+	#navigation ul {
+		float:left;
+		}
+		#navigation ul li {
+			float:left;
+			margin:0 11px 0 0;
+			font-size:133%; text-transform:uppercase;
+			list-style:none;
+		}
+		html>body #navigation ul li {
+			margin:0 15px 0 0;
+		}
+		#navigation ul li a {
+			display:block;
+			padding:4px 7px;
+			text-decoration:none;
+			color:#444;
+		}
+		#navigation ul li.active a {
+			background:url(/_css/_gfx/tile.gif);
+			color:#111;
+		}
+		#navigation ul li a:hover {
+			background-color:#e9e9e9;
+		}
+	#navigation form {
+		margin-top:2px;
+		}
+		#navigation form label {
+			display:none;
+		}
+		#navigation form input#search-input {
+			float:left;
+			width:125px;
+			margin-right:3px;
+			padding:0 2px 1px 2px;
+			border:1px solid #ccc;
+			font-size:133%; text-transform:uppercase;
+			color:#444!important;
+		}
+
+
+/*----------------------------------------------------------------------
+	siteinfo
+----------------------------------------------------------------------*/
+#siteinfo {
+	width:100%;
+	float:left; clear:left;
+	padding:1em 0;
+	border-top:3px solid #ddd;
+	background:url(_gfx/siteinfo.png) repeat-x;
+	}
+	#siteinfo-container {
+		width:855px;
+		margin:0 auto;
+	}
+	#siteinfo-copyright {
+		float:left;
+		}
+		#siteinfo h4 {
+			margin:0 0 0.3em 0;
+			font-weight:bold; font-size:100%;
+			color:#333;
+		}
+		#siteinfo-copyright p {
+			margin:0;
+		}
+	#siteinfo-related {
+		float:right;
+		margin-top:0.5em;
+	}
+	#siteinfo-related li {
+		float:left;
+		list-style:none;
+	}
+	#siteinfo-related li a {
+		float:left;
+		text-indent:-9999px;
+		font-size:0; line-height:0; text-decoration:none;
+		overflow:hidden;
+	}
+	#siteinfo-related li.multipack a,
+	#siteinfo-related li.multipack a:hover {
+		width:133px; height:40px;
+		margin-right:20px;
+		border:0 none;
+		background:url(_gfx/multipack.gif) no-repeat 0 0;
+	}
+	#siteinfo-related li.fourtwo a,
+	#siteinfo-related li.fourtwo a:hover {
+		width:120px; height:40px;
+		border:0 none;
+		background:url(_gfx/fourtwo.gif) no-repeat 0 0;
+	}
+
+
+/*----------------------------------------------------------------------
+	module
+----------------------------------------------------------------------*/
+#content div.module {
+	float:left;
+	width:100%;
+	margin:0 0 1.5em 0;
+	}
+	#content div.module p.more {
+		clear:both;
+		height:1.4em;
+		padding-top:0.4em;
+		border-top:1px solid #eee;
+	}
+	#content div.module p.more a {
+		margin:0 1em 0 0;
+		float:left;
+		font-weight:bold;
+	}
+#content-tertiary div.module {
+	float:left;
+	width:390px;
+	margin-right:10px;
+}
+#content-tertiary div.categories {
+	width:455px;
+	margin-right:0;
+}
+
+
+/*----------------------------------------------------------------------
+	module specifics
+----------------------------------------------------------------------*/
+/* =author */
+#content div.author ul li {
+	list-style:none;
+	margin-bottom:0.3em;
+}
+#content div.author img.photo {
+	display:inline;
+}
+#content div.author div.urls {
+	margin-top:3em;
+	}
+	#content div.author div.urls ul li {
+		float:left;
+		margin:0 1em 0.3em 0;
+	}
+	#content div.author div.urls ul li.aim {
+		clear:left;
+	}
+#content div.author p.technorati {
+	margin-bottom:0.2em;
+}
+#content div.author p.rss {
+	padding-left:18px;
+	background-position:2px 50%;
+	font-weight:bold;
+}
+/* =bookmarks/hAtom */
+#content div.hentry,
+#content div.bookmarks {
+	float:left; clear:left;
+	width:100%;
+	margin-bottom:2.5em;
+}
+#content div.hentry p.entry-more {
+	font-weight:bold;
+}
+#content h3.entry-title {
+	margin-top:0;
+}
+#content div.hentry ul.entry-info {
+	float:left; clear:left;
+	width:90px;
+	margin:0 0 1em 0;
+	}
+	#content div.hentry ul.entry-info li {
+		margin-bottom:0.2em;
+		list-style:none;
+		color:#888;
+		}
+		#content div.hentry ul.entry-info li a {
+			color:#888;
+		}
+#content div.bookmarks p.more {
+	margin-left:100px;
+}
+#content div.hentry div.entry-content,
+#content div.bookmarks div.xfolk {
+	float:right;
+	width:400px;
+}
+#content div.bookmarks div.xfolk dd {
+	margin-left:0;
+}
+/* vcalendar */
+#content div.vcalendar ol li.vevent {
+	list-style:none!important;
+}
+/* entries */
+#content div.entries dl dt {
+	float:left;
+	width:90px;
+	margin-right:10px;
+	font-weight:lighter; text-align:right;
+}
+#content div.entries dl dd {
+	margin-left:100px;
+	margin-bottom:0.3em;
+}
+/* =photos */
+#content div.photos {
+	width:500px;
+	margin-bottom:3em;
+	background:#111 url(/_css/_gfx/module-photos.png) repeat-x left top;
+	color:#ccc;
+}
+#content div.photos h2 {
+	padding:5px 10px;
+	background:url(/_css/_gfx/module-photos-top.gif) no-repeat;
+	}
+	#content div.photos h2 a {
+		font-weight:lighter;
+		color:#eee;
+	}
+#content div.photos a {
+	color:#eee;
+	font-weight:bold;
+	border-bottom-color:#444;
+}
+#content div.photos div {
+	clear:both;
+	padding:0 10px;
+	width:480px;
+	}
+	#content div.photos div h4 {
+		float:left;
+		width:90px;
+		margin:0;
+		color:#ace;
+	}
+	#content div.photos div.albums ul,
+	#content div.photos div.flickr p {
+		float:right;
+		width:390px;
+	}
+	#content div.photos div.albums li {
+		list-style:none;
+	}
+	#content div.photos div.flickr {
+		height:185px;
+		background:url(/_css/_gfx/module-photos-bot.gif) no-repeat left bottom;
+	}
+	#content div.photos div.flickr a img.flickrimg {
+		width:65px; height:65px;
+	}
+	#content div.photos div.flickr p.more {
+		width:375px;
+		margin:0;
+		border:0 none;
+	}
+
+/* =flickr */
+#content .flickr a img.flickrimg {
+	float:left; display:block;
+	width:72px; height:72px;
+	margin:3px 6px 3px 0;
+	padding:4px;
+	background-color:#fff;
+}
+#content .flickr a:hover img.flickrimg {
+	padding:3px;
+	border:1px solid #dda;
+	background:#ffd;
+}
+#content-primary .flickr a img#flickrimg5,
+#content-primary .flickr a img#flickrimg10,
+#content-secondary .flickr a img#flickrimg3,
+#content-secondary .flickr a img#flickrimg6,
+#content-secondary .flickr a img#flickrimg9,
+#content-secondary .flickr a img#flickrimg12 {
+	margin-right:0;
+}
